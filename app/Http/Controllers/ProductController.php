@@ -6,5 +6,11 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    //
+    public function product () {
+        return 'Liste des produits !';
+
+    }
+    public function detailProduct (string $id) {
+        return "product $id";
+    }
 }
