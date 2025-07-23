@@ -7,7 +7,7 @@ use App\Http\Controllers\CartController;
 
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/product', [ProductController:: class, 'product']);//function () { //
@@ -19,5 +19,7 @@ Route::get('/product/{id}', [ProductController::class, 'detailProduct']); //func
 //});
 
 Route::get('/cart', [CartController::class, 'cart']); //function () {
-                                                       // return 'Panier';
-//});
+                                                       // return 'Panier'; });
+
+                                                       
+                                                
